@@ -15,9 +15,9 @@ git zsh-autosuggestions zsh-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 
 #variables
-LOKALGIT="https://debz-g@bitbucket.org/getlokalapp/lokal.git"
-BBTOKEN="ATBBEcP2shGjvcwpkX3zVX8jfExp878EE02C"
-GHTOKEN="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"
+LOKALGIT=""
+BBTOKEN=""
+GHTOKEN=""
 
 #alises
 alias c="clear"
