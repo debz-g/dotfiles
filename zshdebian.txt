@@ -2,7 +2,9 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="gnzh"
 
-export PATH="/usr/local/android-studio/jbr:$PATH"
+export JAVA_HOME="/usr/local/android-studio/jbr"
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH="/usr/local/android-studio/bin:$PATH"
 
 # CASE_SENSITIVE="true"
 
@@ -15,17 +17,24 @@ git zsh-autosuggestions zsh-syntax-highlighting
 source $ZSH/oh-my-zsh.sh
 
 #variables
+TRUECLUBGIT=""
 LOKALGIT=""
 BBTOKEN=""
 GHTOKEN=""
+GLTOKEN=""
 
-#alises
+#alias
+alias d="ls"
 alias c="clear"
 alias h="$HOME"
-alias debz="$HOME/debz-work"
+alias debzwork="$HOME/debz-work"
 alias flipr="cd $HOME/flipper/; ./flipper"
 alias lokalgit="echo $LOKALGIT"
+alias trueclubgit="echo $TRUECLUBGIT"
 alias bbtoken="echo $BBTOKEN"
 alias ghtoken="echo $GHTOKEN"
 alias gltoken="echo $GLTOKEN"
 alias lokal="$HOME/debz-work/Lokal"
+alias trueclub="$HOME/debz-work/TrueClub"
+
+
