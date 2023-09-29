@@ -36,5 +36,5 @@ alias ghtoken="echo $GHTOKEN"
 alias gltoken="echo $GLTOKEN"
 alias lokal="$HOME/debz-work/Lokal"
 alias trueclub="$HOME/debz-work/TrueClub"
-
+alias buildandroid="./gradlew clean :app:assembleDebug; ./gradlew installDebug"
 
