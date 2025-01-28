@@ -1,0 +1,33 @@
+export PATH="/opt/homebrew/bin:$PATH"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/development/flutter/bin:$PATH"
+
+ZSH_THEME="mh"
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(
+git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat
+)
+
+source $ZSH/oh-my-zsh.sh
+
+#variables
+DEBZTOKEN=""
+
+#alias
+alias c="clear"
+alias h="$HOME"
+alias debz="cd $HOME/debz"
+alias debz_token="echo $DEBZTOKEN"
+alias builddebug="./gradlew clean :app:assembleDebug; ./gradlew installDebug"
+alias editzsh="nvim ~/.zshrc"
+alias updatezsh="source ~/.zshrc"
+alias fget="flutter pub get"
+alias fclean="flutter clean"
+alias fdoctor="flutter doctor"
+alias frun="flutter run"
+
+#below are UTF-8 support codes for terminal
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
