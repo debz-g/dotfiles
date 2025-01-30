@@ -13,12 +13,23 @@ source $ZSH/oh-my-zsh.sh
 
 #variables
 DEBZTOKEN=""
+GITREPO=""
+
+# Function to clone Android EIGHT repo with a specific branch
+clone_android_repo() {
+    if [ -z "$1" ]; then
+        echo "Usage: clone <branch-name>"
+        return 1
+    fi
+    git clone -b "$1" "$GITREPO"
+}
 
 #alias
 alias c="clear"
-alias h="$HOME"
-alias debz="cd $HOME/debz"
+alias h="$HOME && ls"
+alias debz="$HOME/debz && ls"
 alias debz_token="echo $DEBZTOKEN"
+alias dw="$HOME/Downloads && ls"
 alias builddebug="./gradlew clean :app:assembleDebug; ./gradlew installDebug"
 alias editzsh="nvim ~/.zshrc"
 alias updatezsh="source ~/.zshrc"
@@ -26,6 +37,7 @@ alias fget="flutter pub get"
 alias fclean="flutter clean"
 alias fdoctor="flutter doctor"
 alias frun="flutter run"
+alias clone_android="clone_android_repo" # The function name and alias name should be different
 
 #below are UTF-8 support codes for terminal
 export LANG=en_US.UTF-8
