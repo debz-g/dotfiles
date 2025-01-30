@@ -27,6 +27,7 @@ clone_android_repo() {
 #alias
 alias c="clear"
 alias h="$HOME && ls"
+alias initvim="$HOME/.config/nvim && nvim init.vim"
 alias debz="$HOME/debz && ls"
 alias debz_token="echo $DEBZTOKEN"
 alias dw="$HOME/Downloads && ls"
